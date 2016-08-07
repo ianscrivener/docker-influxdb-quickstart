@@ -11,6 +11,7 @@ cd docker-influxdb-quickstart
 
 ./setup.sh
 
+
 ./interactive_run.sh
 ```
 
@@ -27,19 +28,28 @@ cd docker-influxdb-quickstart
 
 - exposes http admin port 8083
 
-- exposes  port 8086
+- exposes influxdb port 8086
 
 - deletes the container on shutdown
 
 
 
-**/interactive_run.sh**
+**/daemon_run.sh**
+
+- runs as a daemon 
 
 - names container influxdb
 
 - exposes http admin port 8083
 
-- exposes  port 8086
+- exposes influxdb port 8086
+
+
+**/make_upstart.sh** - for Ubuntu, Centos and RHEL
+
+- configures Influxdb Docker container to start after the server restarts
+
+
 
 
 ####Configuration

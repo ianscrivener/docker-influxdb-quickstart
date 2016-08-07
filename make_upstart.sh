@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-cp ./docker-influx.conf /etc/init/
+cp ./upstart.conf /etc/init/
+mv /etc/init/upstart.conf /etc/init/docker-influx.conf
