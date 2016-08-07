@@ -7,3 +7,7 @@ docker run -d \
     -v $PWD/influxdb.conf:/etc/influxdb/influxdb.conf:ro \
     -v /root/data/influxdb:/var/lib/influxdb \
     influxdb -config /etc/influxdb/influxdb.conf
+
+rm $PWD/influxdb.conf
+sleep 2
+docker ps
